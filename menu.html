@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- ПОЛНОЕ МЕНЮ (открывается по кнопке «Всё меню» с главной) -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню — ДЕЛО В МЯСЕ</title>
+    <link rel="stylesheet" href="css/variables.css?v=10">
+    <link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">ДЕЛО В МЯСЕ</a>
+        <button class="burger" aria-label="Открыть меню">☰</button>
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="delivery.html">Доставка</a>
+            <a href="branches.html">Филиалы</a>
+            <a href="about.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+        <a href="order.html" class="cart-btn">Корзина <span id="cart-count">0</span></a>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>МЕНЮ</h1>
+            <p>Добавляй блюда в корзину и оформляй заказ.</p>
+        </section>
+
+        <div class="filters" id="filters"></div>
+
+        <section>
+            <div id="menu-list" class="cards"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 ДЕЛО В МЯСЕ. Все права защищены.</p>
+    </footer>
+
+    <script src="js/data.js?v=10"></script>
+    <script src="js/cart.js?v=10"></script>
+    <script src="js/main.js?v=10"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- ГЛАВНАЯ СТРАНИЦА -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЕЛО В МЯСЕ — шаурма и фри</title>
+    <meta name="description" content="Лучшая шаурма и картофель фри в городе. 6 филиалов. ДЕЛО В МЯСЕ.">
+    <link rel="stylesheet" href="css/variables.css?v=10">
+    <link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+
+    <!-- Шапка (одинаковая на всех страницах) -->
+    <header class="header">
+        <a href="index.html" class="logo">ДЕЛО В МЯСЕ</a>
+
+        <button class="burger" aria-label="Открыть меню">☰</button>
+
+        <nav class="nav">
+            <a href="index.html" class="active">Главная</a>
+            <a href="delivery.html">Доставка</a>
+            <a href="branches.html">Филиалы</a>
+            <a href="about.html">О нас</a>
+            <a href="contacts.html">Контакты</a>
+        </nav>
+
+        <!-- Корзина ведёт на страницу оформления заказа -->
+        <a href="order.html" class="cart-btn">Корзина <span id="cart-count">0</span></a>
+    </header>
+
+    <main>
+        <!-- ХУК: на ПК во весь экран, на телефоне маленький -->
+        <section class="hero">
+            <h1>ШАУРМА, КОТОРАЯ ГОВОРИТ ЗА СЕБЯ</h1>
+            <p>Самая сочная шаурма и хрустящий фри в городе. 6 филиалов рядом с тобой.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn">Смотреть меню</a>
+                <a href="delivery.html" class="btn-outline">Доставка</a>
+            </div>
+        </section>
+
+        <section class="menu-on-main" id="menu">
+            <h2 class="fade-in">МЕНЮ</h2>
+            <p class="section-sub fade-in">Всё, что мы готовим. Добавляй в корзину.</p>
+            <div id="filters" class="filters"></div>
+            <div id="menu-list" class="cards"></div>
+        </section>
+
+        <!-- КАРТА 2ГИС. Содержимое подставляет js/main.js
+             из настроек gisMap в data.js (нужен ID организации). -->
+        <section class="map-section" id="map">
+            <h2 class="fade-in">ГДЕ НАС НАЙТИ</h2>
+            <p class="section-sub fade-in">Карта 2ГИС. Приближай и открывай филиалы.</p>
+            <div id="gis-map" class="map-frame fade-in"></div>
+            <div class="section-link fade-in">
+                <a class="btn-outline" target="_blank" href="https://2gis.ru/search/%D0%94%D0%95%D0%9B%D0%9E%20%D0%92%20%D0%9C%D0%AF%D0%A1%D0%95">
+                    Открыть в 2ГИС
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 ДЕЛО В МЯСЕ. Все права защищены.</p>
+    </footer>
+
+    <script src="js/data.js?v=10"></script>
+    <script src="js/cart.js?v=10"></script>
+    <script src="js/main.js?v=10"></script>
+</body>
+</html>
